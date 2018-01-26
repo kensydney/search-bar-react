@@ -2,7 +2,7 @@ import express from 'express';
 import webpack from 'webpack';
 import webconfig from './webpack.config.dev';
 import config from './config';
-import { data } from './testData';
+import {data} from './testData';
 
 /* eslint-disable no-console */
 

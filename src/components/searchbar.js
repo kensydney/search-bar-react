@@ -1,49 +1,54 @@
 import React from 'react';
 import debounce from 'lodash.debounce';
-import SearchImage from '../../images/searchImage.png';
+import SearchImage from '../../images/searchImage.PNG';
 import {bindActionCreators} from 'redux';
 import * as searchActions from '../actions/searchActions';
 import {connect} from 'react-redux';
+import PropTypes from 'prop-types';
 
 
 class SearchBar extends React.PureComponent{
 
   doSearch = debounce(() => {
     this.props.actions.setSearchTerm(this.state.searchTerm);
-  }, 300)
+  }, 300);
 
   handleSearch = (event) => {
-    this.setState({ searchTerm: event.target.value }, () => {
+    this.setState({searchTerm: event.target.value}, () => {
       this.doSearch();
     });
-  }
+  };
   
   render() {
     return(
       <div className="inner-container search-box">
         <input        
-            type="search"
-            placeholder="Search Publishers"
-            value={this.props.searchTerm}
-            onChange={this.handleSearch}
+          type="search"
+          placeholder="Search Publishers"
+          value={this.props.searchTerm}
+          onChange={this.handleSearch}
         />
         <img className="search-image" src={SearchImage} />  
       </div>
-      
     );
   }
 }
 
+SearchBar.propTypes = {
+  searchTerm: PropTypes.string,
+  actions: PropTypes.object 
+};
+
 function mapStateToProps(state, ownProps){   
-    return {
-        searchTerm: state.searchTerm
-    };
+  return {
+    searchTerm: state.searchTerm
+  };
 }
 
 function mapDispatchToProps(dispatch){
-    return {
-        actions: bindActionCreators(searchActions, dispatch)
-    };
+  return {
+    actions: bindActionCreators(searchActions, dispatch)
+  };
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(SearchBar);

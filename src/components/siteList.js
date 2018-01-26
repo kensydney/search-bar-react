@@ -17,7 +17,7 @@ const SiteList = (props) => {
 };
 
 SiteList.propTypes = {
-    sites: PropTypes.array.isRequired
+  sites: PropTypes.array.isRequired
 };
 
 export default SiteList;

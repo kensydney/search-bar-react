@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 
 const Site = (props) => {
-  const { site } = props;
+  const {site} = props;
   return (
     <div className="inner-container site-content">
       <div>
