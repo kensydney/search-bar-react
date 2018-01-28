@@ -21,7 +21,8 @@
     "browser": true,
     "node": true,
     "jquery": true,
-    "mocha": true
+    "mocha": true,
+    "jest": true
   },
   "rules": {
     "babel/new-cap": 1,

@@ -1,5 +1,5 @@
 import React from 'react';
-import HeaderImage from '../../images/headerImage.PNG';
+import HeaderImage from '../../images/headerImage.png';
 import Glyphicon from 'react-bootstrap/lib/Glyphicon';
 
 const Header = () => {

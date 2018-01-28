@@ -39,6 +39,7 @@ class SiteApi {
     });
   }
 
+
   static processfilter(data, site, search) {
     if (search.trim() == "") return false;
 

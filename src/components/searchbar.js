@@ -1,6 +1,6 @@
 import React from 'react';
 import debounce from 'lodash.debounce';
-import SearchImage from '../../images/searchImage.PNG';
+import SearchImage from '../../images/searchImage.png';
 import {bindActionCreators} from 'redux';
 import * as searchActions from '../actions/searchActions';
 import {connect} from 'react-redux';
