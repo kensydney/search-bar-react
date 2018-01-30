@@ -7,7 +7,7 @@ import * as siteActions from '../actions/siteActions';
 import {bindActionCreators} from 'redux';
 
 
-class SearchPage extends React.Component {
+export class SearchPage extends React.Component {
 
   constructor(props) {
     super(props);
@@ -44,7 +44,7 @@ SearchPage.propTypes = {
   actions: PropTypes.object 
 };
 
-function mapStateToProps(state, ownProps) {
+function mapStateToProps(state, ownProps) {  
   return {
     sites: state.sites,
     searchTerm: state.search

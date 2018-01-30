@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Site Snapshot capturing Snapshot of Site 1`] = `
+<div
+  className="inner-container site-content"
+>
+  <div>
+    <a
+      href="http://www.ebay.com.au"
+    >
+      www.ebay.com.au
+    </a>
+  </div>
+  <div>
+    This is the description for ebay
+  </div>
+</div>
+`;
