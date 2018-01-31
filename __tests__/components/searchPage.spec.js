@@ -1,7 +1,7 @@
 import React from 'react';
 import {shallow, mount} from 'enzyme';
 import ConnectedSearchPage, {SearchPage} from '../../src/components/searchPage';
-import configureStore,{configureMockStore} from 'redux-mock-store';
+import configureStore from 'redux-mock-store';
 import {Provider} from 'react-redux';
 import * as actions from '../../src/actions/siteActions';
 import * as types from '../../src/actions/actionTypes';
