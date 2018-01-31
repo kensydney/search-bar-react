@@ -27,7 +27,6 @@ class SiteApi {
 
   static filterSearchResult(data, searchTerm) {
     if (searchTerm.trim() == "") return null;
-
     let searchTermArr = searchTerm.split(",");
     return data.sites.filter(site => {
       for (let search of searchTermArr) {

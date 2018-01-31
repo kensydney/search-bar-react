@@ -44,7 +44,7 @@ SearchPage.propTypes = {
   actions: PropTypes.object 
 };
 
-function mapStateToProps(state, ownProps) {  
+function mapStateToProps(state, ownProps) {   
   return {
     sites: state.sites,
     searchTerm: state.search
